@@ -2,6 +2,8 @@ package merkanto.sdjpahibernatedao.dao;
 
 import merkanto.sdjpahibernatedao.domain.Book;
 
+import java.util.List;
+
 public interface BookDao {
 
     Book findByISBN(String isbn);
@@ -16,4 +18,5 @@ public interface BookDao {
 
     void deleteBookById(Long id);
 
+    List<Book> findAll();
 }
